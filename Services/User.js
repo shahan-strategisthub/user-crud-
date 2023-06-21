@@ -2,7 +2,7 @@ const User = require("../Models/User");
 
 async function getAll() {
   const users = await User.findAll();
-  return { users };
+  return users;
 }
 
 async function getSingleUser(id) {
